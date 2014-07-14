@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  BlurViewController.h
 //  FeaturesIOS8
 //
 //  Created by vitaliy.pavlyuk on 7/14/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UITableViewController
-
+@interface BlurViewController : UIViewController
 
 @end
-

@@ -13,6 +13,8 @@
 		842FE4BB1974391700B9CD83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842FE4B91974391700B9CD83 /* Main.storyboard */; };
 		842FE4BD1974391700B9CD83 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842FE4BC1974391700B9CD83 /* Images.xcassets */; };
 		842FE4C91974391700B9CD83 /* FeaturesIOS8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FE4C81974391700B9CD83 /* FeaturesIOS8Tests.m */; };
+		842FE4D4197441EB00B9CD83 /* BlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FE4D3197441EB00B9CD83 /* BlurViewController.m */; };
+		842FE4D81974432300B9CD83 /* Ukraine.png in Resources */ = {isa = PBXBuildFile; fileRef = 842FE4D71974432300B9CD83 /* Ukraine.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,9 @@
 		842FE4C21974391700B9CD83 /* FeaturesIOS8Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeaturesIOS8Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		842FE4C71974391700B9CD83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842FE4C81974391700B9CD83 /* FeaturesIOS8Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeaturesIOS8Tests.m; sourceTree = "<group>"; };
+		842FE4D2197441EB00B9CD83 /* BlurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlurViewController.h; path = Classes/BlurViewController.h; sourceTree = "<group>"; };
+		842FE4D3197441EB00B9CD83 /* BlurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlurViewController.m; path = Classes/BlurViewController.m; sourceTree = "<group>"; };
+		842FE4D71974432300B9CD83 /* Ukraine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ukraine.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +84,8 @@
 		842FE4AE1974391700B9CD83 /* FeaturesIOS8 */ = {
 			isa = PBXGroup;
 			children = (
+				842FE4D6197442DD00B9CD83 /* Recources */,
+				842FE4D5197441F100B9CD83 /* Classes */,
 				842FE4B31974391700B9CD83 /* AppDelegate.h */,
 				842FE4B41974391700B9CD83 /* AppDelegate.m */,
 				842FE4B61974391700B9CD83 /* ViewController.h */,
@@ -114,6 +121,23 @@
 				842FE4C71974391700B9CD83 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		842FE4D5197441F100B9CD83 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				842FE4D2197441EB00B9CD83 /* BlurViewController.h */,
+				842FE4D3197441EB00B9CD83 /* BlurViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		842FE4D6197442DD00B9CD83 /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				842FE4D71974432300B9CD83 /* Ukraine.png */,
+			);
+			name = Recources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +222,7 @@
 			files = (
 				842FE4BB1974391700B9CD83 /* Main.storyboard in Resources */,
 				842FE4BD1974391700B9CD83 /* Images.xcassets in Resources */,
+				842FE4D81974432300B9CD83 /* Ukraine.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +243,7 @@
 				842FE4B81974391700B9CD83 /* ViewController.m in Sources */,
 				842FE4B51974391700B9CD83 /* AppDelegate.m in Sources */,
 				842FE4B21974391700B9CD83 /* main.m in Sources */,
+				842FE4D4197441EB00B9CD83 /* BlurViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +430,7 @@
 				842FE4CE1974391700B9CD83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		842FE4CF1974391700B9CD83 /* Build configuration list for PBXNativeTarget "FeaturesIOS8Tests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +439,7 @@
 				842FE4D11974391700B9CD83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

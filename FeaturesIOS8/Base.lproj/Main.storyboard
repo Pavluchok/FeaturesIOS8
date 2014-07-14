@@ -1,25 +1,116 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6162" systemVersion="14A238h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q8h-DC-tck">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6160"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Root View Controller-->
+        <scene sceneID="Z8J-FI-S8v">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="kVi-jf-UT3" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="W3o-Ms-hch">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="FeaturesCell" id="P9y-vl-jnm">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P9y-vl-jnm" id="4ME-Gs-EO5">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="OCq-yw-VqB" kind="show" identifier="TestSegue" trigger="accessoryAction" id="8GG-7h-cMT"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kVi-jf-UT3" id="fQU-v5-Jqz"/>
+                            <outlet property="delegate" destination="kVi-jf-UT3" id="30k-jQ-kkQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="P7z-WW-gic"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVY-oZ-a7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="412" y="400"/>
+        </scene>
+        <!--Blur View Controller-->
+        <scene sceneID="ZYu-Bw-Zaa">
+            <objects>
+                <viewController id="OCq-yw-VqB" customClass="BlurViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5tf-L7-3x3"/>
+                        <viewControllerLayoutGuide type="bottom" id="edr-GX-KTh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YIE-h8-OXn">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GOj-7l-2oH">
+                                <rect key="frame" x="216" y="407" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="dV1-6k-QIh"/>
+                                    <constraint firstAttribute="height" constant="31" id="kie-2G-NnU"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="changeSwithState:" destination="OCq-yw-VqB" eventType="valueChanged" id="kH4-Uq-n3f"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable blur effect" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LY-t4-MaG">
+                                <rect key="frame" x="169" y="364" width="143" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="GfD-jK-k1A"/>
+                                    <constraint firstAttribute="width" constant="143" id="dy7-Vp-eMd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ukraine.png" translatesAutoresizingMaskIntoConstraints="NO" id="WVS-s7-43n">
+                                <rect key="frame" x="95" y="64" width="290" height="292"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="292" id="MyL-A3-wqD"/>
+                                    <constraint firstAttribute="width" constant="290" id="cL8-9M-Bfy"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WVS-s7-43n" firstAttribute="top" secondItem="5tf-L7-3x3" secondAttribute="bottom" id="KRl-Em-THB"/>
+                            <constraint firstAttribute="centerX" secondItem="6LY-t4-MaG" secondAttribute="centerX" id="OPe-k2-qfg"/>
+                            <constraint firstAttribute="centerX" secondItem="GOj-7l-2oH" secondAttribute="centerX" id="Ulq-ly-vFL"/>
+                            <constraint firstItem="GOj-7l-2oH" firstAttribute="top" secondItem="6LY-t4-MaG" secondAttribute="bottom" constant="22" id="ewh-I2-9YF"/>
+                            <constraint firstItem="edr-GX-KTh" firstAttribute="top" secondItem="GOj-7l-2oH" secondAttribute="bottom" constant="42" id="jIc-jL-e6w"/>
+                            <constraint firstAttribute="centerX" secondItem="WVS-s7-43n" secondAttribute="centerX" id="uI4-Nc-W9M"/>
+                            <constraint firstItem="GOj-7l-2oH" firstAttribute="top" secondItem="6LY-t4-MaG" secondAttribute="bottom" constant="22" id="xdo-Nn-GFs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="WVS-s7-43n" id="CqW-ei-Leb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BlC-2C-p8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976" y="602"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yew-pX-4vq">
+            <objects>
+                <navigationController id="q8h-DC-tck" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w3r-nR-tdS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kVi-jf-UT3" kind="relationship" relationship="rootViewController" id="tVm-G5-uIl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fNX-YI-X9p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143" y="400"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Ukraine.png" width="256" height="256"/>
+    </resources>
 </document>
