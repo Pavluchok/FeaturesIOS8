@@ -15,6 +15,18 @@
 		842FE4C91974391700B9CD83 /* FeaturesIOS8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FE4C81974391700B9CD83 /* FeaturesIOS8Tests.m */; };
 		842FE4D4197441EB00B9CD83 /* BlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FE4D3197441EB00B9CD83 /* BlurViewController.m */; };
 		842FE4D81974432300B9CD83 /* Ukraine.png in Resources */ = {isa = PBXBuildFile; fileRef = 842FE4D71974432300B9CD83 /* Ukraine.png */; };
+		849FB18819751CCD008933E5 /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FB18719751CCD008933E5 /* PresentViewController.m */; };
+		849FB18C197520CA008933E5 /* ExtensionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FB18B197520CA008933E5 /* ExtensionsViewController.m */; };
+		849FB1971975210F008933E5 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FB1961975210F008933E5 /* ActionViewController.m */; };
+		849FB1991975210F008933E5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849FB1981975210F008933E5 /* MainInterface.storyboard */; };
+		849FB19C1975210F008933E5 /* ActionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 849FB1911975210F008933E5 /* ActionExtension.appex */; };
+		849FB1AD1975212D008933E5 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FB1AC1975212D008933E5 /* KeyboardViewController.m */; };
+		849FB1B01975212D008933E5 /* KeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 849FB1A71975212D008933E5 /* KeyboardExtension.appex */; };
+		849FB1BD19752156008933E5 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849FB1BC19752156008933E5 /* NotificationCenter.framework */; };
+		849FB1C319752156008933E5 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FB1C219752156008933E5 /* TodayViewController.m */; };
+		849FB1C519752156008933E5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849FB1C419752156008933E5 /* MainInterface.storyboard */; };
+		849FB1C819752156008933E5 /* WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 849FB1BA19752156008933E5 /* WidgetExtension.appex */; };
+		849FB1D1197534FA008933E5 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FB1D0197534FA008933E5 /* KeyboardViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +37,65 @@
 			remoteGlobalIDString = 842FE4AB1974391700B9CD83;
 			remoteInfo = FeaturesIOS8;
 		};
+		849FB19A1975210F008933E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842FE4A41974391700B9CD83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849FB1901975210F008933E5;
+			remoteInfo = ActionExtension;
+		};
+		849FB19D1975210F008933E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842FE4A41974391700B9CD83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849FB1901975210F008933E5;
+			remoteInfo = ActionExtension;
+		};
+		849FB1AE1975212D008933E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842FE4A41974391700B9CD83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849FB1A61975212D008933E5;
+			remoteInfo = KeyboardExtension;
+		};
+		849FB1B11975212D008933E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842FE4A41974391700B9CD83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849FB1A61975212D008933E5;
+			remoteInfo = KeyboardExtension;
+		};
+		849FB1C619752156008933E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842FE4A41974391700B9CD83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849FB1B919752156008933E5;
+			remoteInfo = WidgetExtension;
+		};
+		849FB1C919752156008933E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842FE4A41974391700B9CD83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849FB1B919752156008933E5;
+			remoteInfo = WidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		849FB1A21975210F008933E5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				849FB19C1975210F008933E5 /* ActionExtension.appex in Embed App Extensions */,
+				849FB1B01975212D008933E5 /* KeyboardExtension.appex in Embed App Extensions */,
+				849FB1C819752156008933E5 /* WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		842FE4AC1974391700B9CD83 /* FeaturesIOS8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeaturesIOS8.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +113,27 @@
 		842FE4D2197441EB00B9CD83 /* BlurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlurViewController.h; path = Classes/BlurViewController.h; sourceTree = "<group>"; };
 		842FE4D3197441EB00B9CD83 /* BlurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlurViewController.m; path = Classes/BlurViewController.m; sourceTree = "<group>"; };
 		842FE4D71974432300B9CD83 /* Ukraine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ukraine.png; sourceTree = "<group>"; };
+		849FB18619751CCD008933E5 /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresentViewController.h; path = Classes/PresentViewController.h; sourceTree = "<group>"; };
+		849FB18719751CCD008933E5 /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresentViewController.m; path = Classes/PresentViewController.m; sourceTree = "<group>"; };
+		849FB18A197520CA008933E5 /* ExtensionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExtensionsViewController.h; path = Classes/ExtensionsViewController.h; sourceTree = "<group>"; };
+		849FB18B197520CA008933E5 /* ExtensionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExtensionsViewController.m; path = Classes/ExtensionsViewController.m; sourceTree = "<group>"; };
+		849FB1911975210F008933E5 /* ActionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ActionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		849FB1941975210F008933E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849FB1951975210F008933E5 /* ActionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionViewController.h; sourceTree = "<group>"; };
+		849FB1961975210F008933E5 /* ActionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionViewController.m; sourceTree = "<group>"; };
+		849FB1981975210F008933E5 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		849FB1A71975212D008933E5 /* KeyboardExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KeyboardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		849FB1AA1975212D008933E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849FB1AB1975212D008933E5 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		849FB1AC1975212D008933E5 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		849FB1BA19752156008933E5 /* WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		849FB1BC19752156008933E5 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		849FB1C019752156008933E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849FB1C119752156008933E5 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		849FB1C219752156008933E5 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		849FB1C419752156008933E5 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		849FB1CF197534FA008933E5 /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardViewController.h; path = Classes/KeyboardViewController.h; sourceTree = "<group>"; };
+		849FB1D0197534FA008933E5 /* KeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyboardViewController.m; path = Classes/KeyboardViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +151,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		849FB18E1975210F008933E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849FB1A41975212D008933E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849FB1B719752156008933E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849FB1BD19752156008933E5 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -68,6 +181,10 @@
 			children = (
 				842FE4AE1974391700B9CD83 /* FeaturesIOS8 */,
 				842FE4C51974391700B9CD83 /* FeaturesIOS8Tests */,
+				849FB1921975210F008933E5 /* ActionExtension */,
+				849FB1A81975212D008933E5 /* KeyboardExtension */,
+				849FB1BE19752156008933E5 /* WidgetExtension */,
+				849FB1BB19752156008933E5 /* Frameworks */,
 				842FE4AD1974391700B9CD83 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +194,9 @@
 			children = (
 				842FE4AC1974391700B9CD83 /* FeaturesIOS8.app */,
 				842FE4C21974391700B9CD83 /* FeaturesIOS8Tests.xctest */,
+				849FB1911975210F008933E5 /* ActionExtension.appex */,
+				849FB1A71975212D008933E5 /* KeyboardExtension.appex */,
+				849FB1BA19752156008933E5 /* WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +204,7 @@
 		842FE4AE1974391700B9CD83 /* FeaturesIOS8 */ = {
 			isa = PBXGroup;
 			children = (
+				849FB189197520A2008933E5 /* Extensions */,
 				842FE4D6197442DD00B9CD83 /* Recources */,
 				842FE4D5197441F100B9CD83 /* Classes */,
 				842FE4B31974391700B9CD83 /* AppDelegate.h */,
@@ -126,8 +247,12 @@
 		842FE4D5197441F100B9CD83 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				849FB1CF197534FA008933E5 /* KeyboardViewController.h */,
+				849FB1D0197534FA008933E5 /* KeyboardViewController.m */,
 				842FE4D2197441EB00B9CD83 /* BlurViewController.h */,
 				842FE4D3197441EB00B9CD83 /* BlurViewController.m */,
+				849FB18619751CCD008933E5 /* PresentViewController.h */,
+				849FB18719751CCD008933E5 /* PresentViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -140,6 +265,79 @@
 			name = Recources;
 			sourceTree = "<group>";
 		};
+		849FB189197520A2008933E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				849FB18A197520CA008933E5 /* ExtensionsViewController.h */,
+				849FB18B197520CA008933E5 /* ExtensionsViewController.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		849FB1921975210F008933E5 /* ActionExtension */ = {
+			isa = PBXGroup;
+			children = (
+				849FB1951975210F008933E5 /* ActionViewController.h */,
+				849FB1961975210F008933E5 /* ActionViewController.m */,
+				849FB1981975210F008933E5 /* MainInterface.storyboard */,
+				849FB1931975210F008933E5 /* Supporting Files */,
+			);
+			path = ActionExtension;
+			sourceTree = "<group>";
+		};
+		849FB1931975210F008933E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				849FB1941975210F008933E5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		849FB1A81975212D008933E5 /* KeyboardExtension */ = {
+			isa = PBXGroup;
+			children = (
+				849FB1AB1975212D008933E5 /* KeyboardViewController.h */,
+				849FB1AC1975212D008933E5 /* KeyboardViewController.m */,
+				849FB1A91975212D008933E5 /* Supporting Files */,
+			);
+			path = KeyboardExtension;
+			sourceTree = "<group>";
+		};
+		849FB1A91975212D008933E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				849FB1AA1975212D008933E5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		849FB1BB19752156008933E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				849FB1BC19752156008933E5 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		849FB1BE19752156008933E5 /* WidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				849FB1C119752156008933E5 /* TodayViewController.h */,
+				849FB1C219752156008933E5 /* TodayViewController.m */,
+				849FB1C419752156008933E5 /* MainInterface.storyboard */,
+				849FB1BF19752156008933E5 /* Supporting Files */,
+			);
+			path = WidgetExtension;
+			sourceTree = "<group>";
+		};
+		849FB1BF19752156008933E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				849FB1C019752156008933E5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +348,17 @@
 				842FE4A81974391700B9CD83 /* Sources */,
 				842FE4A91974391700B9CD83 /* Frameworks */,
 				842FE4AA1974391700B9CD83 /* Resources */,
+				849FB1A21975210F008933E5 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				849FB19B1975210F008933E5 /* PBXTargetDependency */,
+				849FB19E1975210F008933E5 /* PBXTargetDependency */,
+				849FB1AF1975212D008933E5 /* PBXTargetDependency */,
+				849FB1B21975212D008933E5 /* PBXTargetDependency */,
+				849FB1C719752156008933E5 /* PBXTargetDependency */,
+				849FB1CA19752156008933E5 /* PBXTargetDependency */,
 			);
 			name = FeaturesIOS8;
 			productName = FeaturesIOS8;
@@ -178,6 +383,57 @@
 			productReference = 842FE4C21974391700B9CD83 /* FeaturesIOS8Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		849FB1901975210F008933E5 /* ActionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849FB19F1975210F008933E5 /* Build configuration list for PBXNativeTarget "ActionExtension" */;
+			buildPhases = (
+				849FB18D1975210F008933E5 /* Sources */,
+				849FB18E1975210F008933E5 /* Frameworks */,
+				849FB18F1975210F008933E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActionExtension;
+			productName = ActionExtension;
+			productReference = 849FB1911975210F008933E5 /* ActionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		849FB1A61975212D008933E5 /* KeyboardExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849FB1B31975212D008933E5 /* Build configuration list for PBXNativeTarget "KeyboardExtension" */;
+			buildPhases = (
+				849FB1A31975212D008933E5 /* Sources */,
+				849FB1A41975212D008933E5 /* Frameworks */,
+				849FB1A51975212D008933E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyboardExtension;
+			productName = KeyboardExtension;
+			productReference = 849FB1A71975212D008933E5 /* KeyboardExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		849FB1B919752156008933E5 /* WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849FB1CB19752156008933E5 /* Build configuration list for PBXNativeTarget "WidgetExtension" */;
+			buildPhases = (
+				849FB1B619752156008933E5 /* Sources */,
+				849FB1B719752156008933E5 /* Frameworks */,
+				849FB1B819752156008933E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetExtension;
+			productName = WidgetExtension;
+			productReference = 849FB1BA19752156008933E5 /* WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -193,6 +449,15 @@
 					842FE4C11974391700B9CD83 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 842FE4AB1974391700B9CD83;
+					};
+					849FB1901975210F008933E5 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					849FB1A61975212D008933E5 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					849FB1B919752156008933E5 = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -211,6 +476,9 @@
 			targets = (
 				842FE4AB1974391700B9CD83 /* FeaturesIOS8 */,
 				842FE4C11974391700B9CD83 /* FeaturesIOS8Tests */,
+				849FB1901975210F008933E5 /* ActionExtension */,
+				849FB1A61975212D008933E5 /* KeyboardExtension */,
+				849FB1B919752156008933E5 /* WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +501,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		849FB18F1975210F008933E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849FB1991975210F008933E5 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849FB1A51975212D008933E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849FB1B819752156008933E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849FB1C519752156008933E5 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -240,6 +531,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849FB18C197520CA008933E5 /* ExtensionsViewController.m in Sources */,
+				849FB18819751CCD008933E5 /* PresentViewController.m in Sources */,
+				849FB1D1197534FA008933E5 /* KeyboardViewController.m in Sources */,
 				842FE4B81974391700B9CD83 /* ViewController.m in Sources */,
 				842FE4B51974391700B9CD83 /* AppDelegate.m in Sources */,
 				842FE4B21974391700B9CD83 /* main.m in Sources */,
@@ -255,6 +549,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		849FB18D1975210F008933E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849FB1971975210F008933E5 /* ActionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849FB1A31975212D008933E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849FB1AD1975212D008933E5 /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849FB1B619752156008933E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849FB1C319752156008933E5 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -262,6 +580,36 @@
 			isa = PBXTargetDependency;
 			target = 842FE4AB1974391700B9CD83 /* FeaturesIOS8 */;
 			targetProxy = 842FE4C31974391700B9CD83 /* PBXContainerItemProxy */;
+		};
+		849FB19B1975210F008933E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849FB1901975210F008933E5 /* ActionExtension */;
+			targetProxy = 849FB19A1975210F008933E5 /* PBXContainerItemProxy */;
+		};
+		849FB19E1975210F008933E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849FB1901975210F008933E5 /* ActionExtension */;
+			targetProxy = 849FB19D1975210F008933E5 /* PBXContainerItemProxy */;
+		};
+		849FB1AF1975212D008933E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849FB1A61975212D008933E5 /* KeyboardExtension */;
+			targetProxy = 849FB1AE1975212D008933E5 /* PBXContainerItemProxy */;
+		};
+		849FB1B21975212D008933E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849FB1A61975212D008933E5 /* KeyboardExtension */;
+			targetProxy = 849FB1B11975212D008933E5 /* PBXContainerItemProxy */;
+		};
+		849FB1C719752156008933E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849FB1B919752156008933E5 /* WidgetExtension */;
+			targetProxy = 849FB1C619752156008933E5 /* PBXContainerItemProxy */;
+		};
+		849FB1CA19752156008933E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849FB1B919752156008933E5 /* WidgetExtension */;
+			targetProxy = 849FB1C919752156008933E5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -411,6 +759,78 @@
 			};
 			name = Release;
 		};
+		849FB1A01975210F008933E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ActionExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		849FB1A11975210F008933E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ActionExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		849FB1B41975212D008933E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = KeyboardExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		849FB1B51975212D008933E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KeyboardExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		849FB1CC19752156008933E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		849FB1CD19752156008933E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WidgetExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -440,6 +860,30 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		849FB19F1975210F008933E5 /* Build configuration list for PBXNativeTarget "ActionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849FB1A01975210F008933E5 /* Debug */,
+				849FB1A11975210F008933E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		849FB1B31975212D008933E5 /* Build configuration list for PBXNativeTarget "KeyboardExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849FB1B41975212D008933E5 /* Debug */,
+				849FB1B51975212D008933E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		849FB1CB19752156008933E5 /* Build configuration list for PBXNativeTarget "WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849FB1CC19752156008933E5 /* Debug */,
+				849FB1CD19752156008933E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

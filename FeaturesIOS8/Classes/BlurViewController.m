@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) UIVisualEffectView *blurView;
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
+@property (weak, nonatomic) IBOutlet UISwitch *blurSwitch;
 
 @end
 
@@ -24,10 +25,18 @@
     UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
     _blurView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
     [_blurView setFrame:CGRectMake(0,  _imageView.frame.origin.y, self.view.frame.size.width, _imageView.frame.size.height) ];
+    [_blurView setAlpha:0.0f];
     [self.view addSubview:_blurView];
     // Do any additional setup after loading the view.
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [UIView animateWithDuration:0.5 animations:^{
+        [_blurView setAlpha:1.0f];
+    }];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -38,6 +47,19 @@
 {
     UISwitch *switchControl = (UISwitch *)sender;
     [_blurView setHidden:![switchControl isOn]];
+}
+- (IBAction)changeBlurStyle:(id)sender
+{
+    UISegmentedControl *segment = (UISegmentedControl *)sender;
+    
+    [_blurView removeFromSuperview];
+    
+    CGRect blurFrame = [_blurView frame];
+    _blurView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:[segment selectedSegmentIndex]]];
+    [_blurView setFrame:blurFrame];
+    [_blurView setHidden:![_blurSwitch isOn]];
+    
+    [self.view addSubview:_blurView];
 }
 
 /*

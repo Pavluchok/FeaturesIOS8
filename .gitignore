@@ -1,0 +1,4 @@
+*.xcodeproj
+*.xccheckout
+.DS_Store
+*.xcuserstate

@@ -46,7 +46,11 @@ static NSString *const kFeaturestTableCellIdentifier = @"FeaturesCell";
 {
     if([_features[indexPath.row] isEqual:@"Blur"])
     {
-        [self performSegueWithIdentifier:@"TestSegue" sender:self];
+        [self performSegueWithIdentifier:@"BlurSegue" sender:self];
+    }
+    else if ([_features[indexPath.row] isEqual:@"Extensions"])
+    {
+        [self performSegueWithIdentifier:@"ExtensionsSegue" sender:self];
     }
 }
 
