@@ -46,7 +46,15 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([_extensions[indexPath.row] isEqual:@"Keyboard"]) {
+    if ([_extensions[indexPath.row] isEqual:@"Action"])
+    {
+        UIStoryboard *stroryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *keyboardVC = [stroryBoard instantiateViewControllerWithIdentifier:@"ActionVC"];
+        [self.navigationController pushViewController:keyboardVC animated:YES];
+        
+    }
+    else if ([_extensions[indexPath.row] isEqual:@"Keyboard"])
+    {
         UIStoryboard *stroryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         UIViewController *keyboardVC = [stroryBoard instantiateViewControllerWithIdentifier:@"KeyboardVC"];
         [self.navigationController pushViewController:keyboardVC animated:YES];

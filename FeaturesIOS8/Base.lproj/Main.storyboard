@@ -33,6 +33,15 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <variation key="widthClass=compact" ambiguous="YES">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
+                            <rect key="frame" x="0.0" y="0.0" width="640" height="640"/>
+                        </variation>
                         <connections>
                             <outlet property="dataSource" destination="kVi-jf-UT3" id="fQU-v5-Jqz"/>
                             <outlet property="delegate" destination="kVi-jf-UT3" id="30k-jQ-kkQ"/>
@@ -139,7 +148,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="R8v-Fe-jBz">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="R8v-Fe-jBz">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -158,6 +167,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="R8v-Fe-jBz" secondAttribute="bottom" id="8Zo-Ej-fAN"/>
+                            <constraint firstItem="R8v-Fe-jBz" firstAttribute="top" secondItem="GtD-GC-UeO" secondAttribute="top" id="8lN-Sl-HA9"/>
+                            <constraint firstAttribute="trailing" secondItem="R8v-Fe-jBz" secondAttribute="trailing" id="IDO-FR-syf"/>
+                            <constraint firstItem="R8v-Fe-jBz" firstAttribute="leading" secondItem="GtD-GC-UeO" secondAttribute="leading" id="xhX-dv-i0I"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="ExtensionsTableView" destination="R8v-Fe-jBz" id="xvH-vQ-qD1"/>
@@ -166,6 +181,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CO7-sa-1jo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="976" y="59"/>
+        </scene>
+        <!--Action View Controller-->
+        <scene sceneID="AXN-Mg-xoQ">
+            <objects>
+                <viewController storyboardIdentifier="ActionVC" id="Lgh-VZ-5gf" customClass="ActionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="692-xb-UvU"/>
+                        <viewControllerLayoutGuide type="bottom" id="xvK-rA-LSF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tHc-x2-UAi">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFH-Ly-vaO">
+                                <rect key="frame" x="0.0" y="436" width="480" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="TCc-E7-iSX"/>
+                                    <barButtonItem title="Item" id="FL1-GK-TK7">
+                                        <connections>
+                                            <action selector="pressActionButton:" destination="Lgh-VZ-5gf" id="FGx-Up-5XX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xS3-H4-GXl"/>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Apple_Logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xwv-Vf-NCq">
+                                <rect key="frame" x="0.0" y="45" width="480" height="391"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xvK-rA-LSF" firstAttribute="top" secondItem="PFH-Ly-vaO" secondAttribute="bottom" id="8PG-iN-84u"/>
+                            <constraint firstItem="xwv-Vf-NCq" firstAttribute="top" secondItem="692-xb-UvU" secondAttribute="bottom" constant="25" id="PKb-Iy-QJC"/>
+                            <constraint firstAttribute="trailing" secondItem="PFH-Ly-vaO" secondAttribute="trailing" id="afL-fd-mOa"/>
+                            <constraint firstItem="PFH-Ly-vaO" firstAttribute="top" secondItem="xwv-Vf-NCq" secondAttribute="bottom" id="ff7-an-tR0"/>
+                            <constraint firstItem="PFH-Ly-vaO" firstAttribute="leading" secondItem="tHc-x2-UAi" secondAttribute="leading" id="m3U-Uh-zHQ"/>
+                            <constraint firstItem="xvK-rA-LSF" firstAttribute="top" secondItem="xwv-Vf-NCq" secondAttribute="bottom" constant="44" id="mCM-hA-GkX"/>
+                            <constraint firstItem="xwv-Vf-NCq" firstAttribute="leading" secondItem="tHc-x2-UAi" secondAttribute="leading" id="sbp-an-cRe"/>
+                            <constraint firstAttribute="trailing" secondItem="xwv-Vf-NCq" secondAttribute="trailing" id="vCT-ir-Jwc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="actionImageView" destination="xwv-Vf-NCq" id="aeg-2r-3SD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mZh-uL-jsi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1527" y="-225"/>
         </scene>
         <!--Keyboard View Controller-->
         <scene sceneID="B34-oD-VZx">
@@ -182,25 +245,48 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Go to &quot;Settings->General->Keyboard->Keyboards->Add New Keyboard...->FeaturesIOS8&quot; and testing new keyboard 😉" translatesAutoresizingMaskIntoConstraints="NO" id="3Ie-oR-a0C">
                                 <rect key="frame" x="0.0" y="35" width="480" height="144"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="144" id="KNC-rJ-KNL"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="39" width="320" height="144"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="0.0" y="39" width="320" height="112"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="103" y="36" width="434" height="144"/>
+                                </variation>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3Ie-oR-a0C" firstAttribute="leading" secondItem="Sxk-lm-md4" secondAttribute="leading" id="NmH-zn-ajr"/>
-                            <constraint firstAttribute="trailing" secondItem="3Ie-oR-a0C" secondAttribute="trailing" id="UEP-5w-WH2"/>
-                            <constraint firstItem="3Ie-oR-a0C" firstAttribute="top" secondItem="Ncg-pB-Tst" secondAttribute="bottom" constant="25" id="xfR-9d-aZD"/>
+                            <constraint firstItem="xkg-qi-mFz" firstAttribute="top" secondItem="3Ie-oR-a0C" secondAttribute="bottom" constant="169" id="20g-bD-GKX"/>
+                            <constraint firstItem="3Ie-oR-a0C" firstAttribute="leading" secondItem="Sxk-lm-md4" secondAttribute="leading" id="BAo-nz-9pz"/>
+                            <constraint firstItem="3Ie-oR-a0C" firstAttribute="top" secondItem="Ncg-pB-Tst" secondAttribute="bottom" constant="19" id="DwL-kC-TXK"/>
+                            <constraint firstAttribute="trailing" secondItem="3Ie-oR-a0C" secondAttribute="trailing" id="NG8-qb-AKo"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BAo-nz-9pz"/>
+                                <exclude reference="DwL-kC-TXK"/>
+                                <exclude reference="NG8-qb-AKo"/>
+                                <exclude reference="20g-bD-GKX"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="BAo-nz-9pz"/>
+                                <include reference="DwL-kC-TXK"/>
+                                <include reference="NG8-qb-AKo"/>
+                                <include reference="20g-bD-GKX"/>
+                            </mask>
+                        </variation>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8QN-AA-h3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1526" y="59"/>
+            <point key="canvasLocation" x="1535" y="317"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yew-pX-4vq">
@@ -220,6 +306,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Apple_Logo.jpg" width="512" height="512"/>
         <image name="Ukraine.png" width="256" height="256"/>
     </resources>
 </document>

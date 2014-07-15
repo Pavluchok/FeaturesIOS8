@@ -15,6 +15,8 @@
 		842FE4C91974391700B9CD83 /* FeaturesIOS8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FE4C81974391700B9CD83 /* FeaturesIOS8Tests.m */; };
 		842FE4D4197441EB00B9CD83 /* BlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FE4D3197441EB00B9CD83 /* BlurViewController.m */; };
 		842FE4D81974432300B9CD83 /* Ukraine.png in Resources */ = {isa = PBXBuildFile; fileRef = 842FE4D71974432300B9CD83 /* Ukraine.png */; };
+		848766D8197570D200611D1F /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848766D7197570D200611D1F /* ActionViewController.m */; };
+		848766DA1975734600611D1F /* Apple_Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 848766D91975734600611D1F /* Apple_Logo.jpg */; };
 		849FB18819751CCD008933E5 /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FB18719751CCD008933E5 /* PresentViewController.m */; };
 		849FB18C197520CA008933E5 /* ExtensionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FB18B197520CA008933E5 /* ExtensionsViewController.m */; };
 		849FB1971975210F008933E5 /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FB1961975210F008933E5 /* ActionViewController.m */; };
@@ -113,6 +115,9 @@
 		842FE4D2197441EB00B9CD83 /* BlurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlurViewController.h; path = Classes/BlurViewController.h; sourceTree = "<group>"; };
 		842FE4D3197441EB00B9CD83 /* BlurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlurViewController.m; path = Classes/BlurViewController.m; sourceTree = "<group>"; };
 		842FE4D71974432300B9CD83 /* Ukraine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ukraine.png; sourceTree = "<group>"; };
+		848766D6197570D200611D1F /* ActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionViewController.h; path = Classes/ActionViewController.h; sourceTree = "<group>"; };
+		848766D7197570D200611D1F /* ActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionViewController.m; path = Classes/ActionViewController.m; sourceTree = "<group>"; };
+		848766D91975734600611D1F /* Apple_Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Apple_Logo.jpg; sourceTree = "<group>"; };
 		849FB18619751CCD008933E5 /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresentViewController.h; path = Classes/PresentViewController.h; sourceTree = "<group>"; };
 		849FB18719751CCD008933E5 /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresentViewController.m; path = Classes/PresentViewController.m; sourceTree = "<group>"; };
 		849FB18A197520CA008933E5 /* ExtensionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExtensionsViewController.h; path = Classes/ExtensionsViewController.h; sourceTree = "<group>"; };
@@ -253,6 +258,8 @@
 				842FE4D3197441EB00B9CD83 /* BlurViewController.m */,
 				849FB18619751CCD008933E5 /* PresentViewController.h */,
 				849FB18719751CCD008933E5 /* PresentViewController.m */,
+				848766D6197570D200611D1F /* ActionViewController.h */,
+				848766D7197570D200611D1F /* ActionViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -260,6 +267,7 @@
 		842FE4D6197442DD00B9CD83 /* Recources */ = {
 			isa = PBXGroup;
 			children = (
+				848766D91975734600611D1F /* Apple_Logo.jpg */,
 				842FE4D71974432300B9CD83 /* Ukraine.png */,
 			);
 			name = Recources;
@@ -491,6 +499,7 @@
 				842FE4BB1974391700B9CD83 /* Main.storyboard in Resources */,
 				842FE4BD1974391700B9CD83 /* Images.xcassets in Resources */,
 				842FE4D81974432300B9CD83 /* Ukraine.png in Resources */,
+				848766DA1975734600611D1F /* Apple_Logo.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +546,7 @@
 				842FE4B81974391700B9CD83 /* ViewController.m in Sources */,
 				842FE4B51974391700B9CD83 /* AppDelegate.m in Sources */,
 				842FE4B21974391700B9CD83 /* main.m in Sources */,
+				848766D8197570D200611D1F /* ActionViewController.m in Sources */,
 				842FE4D4197441EB00B9CD83 /* BlurViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -868,6 +878,7 @@
 				849FB1A11975210F008933E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		849FB1B31975212D008933E5 /* Build configuration list for PBXNativeTarget "KeyboardExtension" */ = {
 			isa = XCConfigurationList;
@@ -876,6 +887,7 @@
 				849FB1B51975212D008933E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		849FB1CB19752156008933E5 /* Build configuration list for PBXNativeTarget "WidgetExtension" */ = {
 			isa = XCConfigurationList;
@@ -884,6 +896,7 @@
 				849FB1CD19752156008933E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
