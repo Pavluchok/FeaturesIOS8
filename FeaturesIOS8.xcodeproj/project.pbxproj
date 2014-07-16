@@ -29,6 +29,8 @@
 		849FB1C519752156008933E5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849FB1C419752156008933E5 /* MainInterface.storyboard */; };
 		849FB1C819752156008933E5 /* WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 849FB1BA19752156008933E5 /* WidgetExtension.appex */; };
 		849FB1D1197534FA008933E5 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FB1D0197534FA008933E5 /* KeyboardViewController.m */; };
+		84A7DED7197586F900712108 /* PresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7DED6197586F900712108 /* PresentationViewController.m */; };
+		84A7DEDA19758C5600712108 /* CustomPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7DED919758C5600712108 /* CustomPopoverViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +141,10 @@
 		849FB1C419752156008933E5 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		849FB1CF197534FA008933E5 /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardViewController.h; path = Classes/KeyboardViewController.h; sourceTree = "<group>"; };
 		849FB1D0197534FA008933E5 /* KeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyboardViewController.m; path = Classes/KeyboardViewController.m; sourceTree = "<group>"; };
+		84A7DED5197586F900712108 /* PresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresentationViewController.h; path = Classes/PresentationViewController.h; sourceTree = "<group>"; };
+		84A7DED6197586F900712108 /* PresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresentationViewController.m; path = Classes/PresentationViewController.m; sourceTree = "<group>"; };
+		84A7DED819758C5600712108 /* CustomPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomPopoverViewController.h; path = Classes/CustomPopoverViewController.h; sourceTree = "<group>"; };
+		84A7DED919758C5600712108 /* CustomPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomPopoverViewController.m; path = Classes/CustomPopoverViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +266,10 @@
 				849FB18719751CCD008933E5 /* PresentViewController.m */,
 				848766D6197570D200611D1F /* ActionViewController.h */,
 				848766D7197570D200611D1F /* ActionViewController.m */,
+				84A7DED5197586F900712108 /* PresentationViewController.h */,
+				84A7DED6197586F900712108 /* PresentationViewController.m */,
+				84A7DED819758C5600712108 /* CustomPopoverViewController.h */,
+				84A7DED919758C5600712108 /* CustomPopoverViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -543,11 +553,13 @@
 				849FB18C197520CA008933E5 /* ExtensionsViewController.m in Sources */,
 				849FB18819751CCD008933E5 /* PresentViewController.m in Sources */,
 				849FB1D1197534FA008933E5 /* KeyboardViewController.m in Sources */,
+				84A7DEDA19758C5600712108 /* CustomPopoverViewController.m in Sources */,
 				842FE4B81974391700B9CD83 /* ViewController.m in Sources */,
 				842FE4B51974391700B9CD83 /* AppDelegate.m in Sources */,
 				842FE4B21974391700B9CD83 /* main.m in Sources */,
 				848766D8197570D200611D1F /* ActionViewController.m in Sources */,
 				842FE4D4197441EB00B9CD83 /* BlurViewController.m in Sources */,
+				84A7DED7197586F900712108 /* PresentationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

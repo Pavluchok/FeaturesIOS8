@@ -21,7 +21,7 @@ static NSString *const kFeaturestTableCellIdentifier = @"FeaturesCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _features = @[@"Extensions", @"Blur"];
+    _features = @[@"Extensions", @"Blur", @"Presentation View Controller"];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -37,7 +37,15 @@ static NSString *const kFeaturestTableCellIdentifier = @"FeaturesCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kFeaturestTableCellIdentifier];
+    UITableViewCell *cell;
+    if (indexPath.row == 2)
+    {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"PresentationCell"];
+    }
+    else
+    {
+    cell = [tableView dequeueReusableCellWithIdentifier:kFeaturestTableCellIdentifier];
+    }
     [cell.textLabel setText:_features[indexPath.row]];
     return cell;
 }
@@ -52,6 +60,8 @@ static NSString *const kFeaturestTableCellIdentifier = @"FeaturesCell";
     {
         [self performSegueWithIdentifier:@"ExtensionsSegue" sender:self];
     }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 

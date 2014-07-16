@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Features-->
         <scene sceneID="Z8J-FI-S8v">
             <objects>
                 <tableViewController id="kVi-jf-UT3" customClass="ViewController" sceneMemberID="viewController">
@@ -32,6 +32,16 @@
                                     <segue destination="3FZ-lj-AXd" kind="show" identifier="ExtensionsSegue" id="xht-Cs-UTT"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="PresentationCell" id="7TY-Hd-Raa">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7TY-Hd-Raa" id="aGS-cb-VAh">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="gib-z1-OC5" kind="presentation" id="X0O-xp-mGO"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <variation key="widthClass=compact" ambiguous="YES">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -47,7 +57,7 @@
                             <outlet property="delegate" destination="kVi-jf-UT3" id="30k-jQ-kkQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="P7z-WW-gic"/>
+                    <navigationItem key="navigationItem" title="Features" id="P7z-WW-gic"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MVY-oZ-a7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,10 +146,10 @@
             </objects>
             <point key="canvasLocation" x="976" y="602"/>
         </scene>
-        <!--Extensions View Controller-->
+        <!--Extensions-->
         <scene sceneID="1S0-23-jZp">
             <objects>
-                <viewController id="3FZ-lj-AXd" customClass="ExtensionsViewController" sceneMemberID="viewController">
+                <viewController title="Extensions" id="3FZ-lj-AXd" customClass="ExtensionsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4ZT-5k-pac"/>
                         <viewControllerLayoutGuide type="bottom" id="ANO-Ul-giO"/>
@@ -160,6 +170,12 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <variation key="widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="3FZ-lj-AXd" id="Waq-kQ-QJ3"/>
                                     <outlet property="delegate" destination="3FZ-lj-AXd" id="yuW-He-NOl"/>
@@ -242,12 +258,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Go to &quot;Settings->General->Keyboard->Keyboards->Add New Keyboard...->FeaturesIOS8&quot; and testing new keyboard 😉" translatesAutoresizingMaskIntoConstraints="NO" id="3Ie-oR-a0C">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Go to &quot;Settings->General->Keyboard->Keyboards->Add New Keyboard...->FeaturesIOS8&quot; and testing new keyboard 😉" translatesAutoresizingMaskIntoConstraints="NO" id="3Ie-oR-a0C">
                                 <rect key="frame" x="0.0" y="35" width="480" height="144"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="Q2E-du-X4O"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
+                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="0.0" y="39" width="320" height="144"/>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
@@ -263,7 +282,10 @@
                             <constraint firstItem="xkg-qi-mFz" firstAttribute="top" secondItem="3Ie-oR-a0C" secondAttribute="bottom" constant="169" id="20g-bD-GKX"/>
                             <constraint firstItem="3Ie-oR-a0C" firstAttribute="leading" secondItem="Sxk-lm-md4" secondAttribute="leading" id="BAo-nz-9pz"/>
                             <constraint firstItem="3Ie-oR-a0C" firstAttribute="top" secondItem="Ncg-pB-Tst" secondAttribute="bottom" constant="19" id="DwL-kC-TXK"/>
+                            <constraint firstItem="3Ie-oR-a0C" firstAttribute="leading" secondItem="Sxk-lm-md4" secondAttribute="leading" id="Fod-Qd-Lnk"/>
+                            <constraint firstAttribute="trailing" secondItem="3Ie-oR-a0C" secondAttribute="trailing" id="Mps-A0-gk5"/>
                             <constraint firstAttribute="trailing" secondItem="3Ie-oR-a0C" secondAttribute="trailing" id="NG8-qb-AKo"/>
+                            <constraint firstItem="3Ie-oR-a0C" firstAttribute="top" secondItem="Ncg-pB-Tst" secondAttribute="bottom" constant="15" id="QWo-JA-wjg"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -287,6 +309,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8QN-AA-h3n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1535" y="317"/>
+        </scene>
+        <!--Custom Popover View Controller-->
+        <scene sceneID="ltA-6Z-IdY">
+            <objects>
+                <viewController id="gib-z1-OC5" customClass="CustomPopoverViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iVD-8b-xY7"/>
+                        <viewControllerLayoutGuide type="bottom" id="7ex-c8-qjK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SSk-EV-c4A">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amc-f0-XAT">
+                                <rect key="frame" x="217" y="400" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="N4D-he-wYz"/>
+                                    <constraint firstAttribute="width" constant="46" id="QKx-ay-H4Q"/>
+                                </constraints>
+                                <state key="normal" title="Close">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissPopover:" destination="gib-z1-OC5" eventType="touchUpInside" id="4QA-eF-2wU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7ex-c8-qjK" firstAttribute="top" secondItem="amc-f0-XAT" secondAttribute="bottom" constant="50" id="7qF-jO-zNW"/>
+                            <constraint firstAttribute="centerX" secondItem="amc-f0-XAT" secondAttribute="centerX" id="ZLj-zE-EKN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pHb-Hm-FQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976" y="1134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yew-pX-4vq">
