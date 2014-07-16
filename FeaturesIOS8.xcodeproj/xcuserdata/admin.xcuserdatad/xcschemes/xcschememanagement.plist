@@ -9,6 +9,16 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>DocumentExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>DocumentExtensionFileProvider.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>FeaturesIOS8.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -48,6 +58,16 @@
 			<true/>
 		</dict>
 		<key>849FB1B919752156008933E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84DC51CB1976798900515A5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84DC51D91976798900515A5E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

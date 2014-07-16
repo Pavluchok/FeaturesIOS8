@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _extensions = @[@"Action", @"Keyboard", @"Today"];
+    _extensions = @[@"Action", @"Keyboard", @"Today", @"Document provider"];
     _identifier = @[@"ActionVC", @"KeyboarVC", @"TodayVC"];
 
     // Do any additional setup after loading the view.
@@ -46,17 +46,26 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UIStoryboard *stroryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    NSString *viewControllerIdentifier = nil;
+    
     if ([_extensions[indexPath.row] isEqual:@"Action"])
     {
-        UIStoryboard *stroryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        UIViewController *keyboardVC = [stroryBoard instantiateViewControllerWithIdentifier:@"ActionVC"];
-        [self.navigationController pushViewController:keyboardVC animated:YES];
-        
+        viewControllerIdentifier = @"ActionVC";
     }
     else if ([_extensions[indexPath.row] isEqual:@"Keyboard"])
     {
-        UIStoryboard *stroryBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        UIViewController *keyboardVC = [stroryBoard instantiateViewControllerWithIdentifier:@"KeyboardVC"];
+        viewControllerIdentifier = @"KeyboardVC";
+    }
+    else if ([_extensions[indexPath.row] isEqual:@"Document provider"])
+    {
+        viewControllerIdentifier = @"DocumentVC";
+    }
+    
+    if (viewControllerIdentifier != nil)
+    {
+        UIViewController *keyboardVC = [stroryBoard instantiateViewControllerWithIdentifier:viewControllerIdentifier];
         [self.navigationController pushViewController:keyboardVC animated:YES];
     }
 }

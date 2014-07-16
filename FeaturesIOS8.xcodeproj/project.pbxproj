@@ -31,6 +31,13 @@
 		849FB1D1197534FA008933E5 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FB1D0197534FA008933E5 /* KeyboardViewController.m */; };
 		84A7DED7197586F900712108 /* PresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7DED6197586F900712108 /* PresentationViewController.m */; };
 		84A7DEDA19758C5600712108 /* CustomPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7DED919758C5600712108 /* CustomPopoverViewController.m */; };
+		84DC51D31976798900515A5E /* DocumentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC51D21976798900515A5E /* DocumentPickerViewController.m */; };
+		84DC51D51976798900515A5E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84DC51D41976798900515A5E /* MainInterface.storyboard */; };
+		84DC51E11976798900515A5E /* FileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC51E01976798900515A5E /* FileProvider.m */; };
+		84DC51E41976798900515A5E /* DocumentExtensionFileProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84DC51DA1976798900515A5E /* DocumentExtensionFileProvider.appex */; };
+		84DC51E91976798900515A5E /* DocumentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84DC51CC1976798900515A5E /* DocumentExtension.appex */; };
+		84DC51F419767F2600515A5E /* DocumentProvideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC51F319767F2600515A5E /* DocumentProvideViewController.m */; };
+		84F0D88D19769311000BC949 /* CustomPresentationAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F0D88C19769311000BC949 /* CustomPresentationAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +90,34 @@
 			remoteGlobalIDString = 849FB1B919752156008933E5;
 			remoteInfo = WidgetExtension;
 		};
+		84DC51E21976798900515A5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842FE4A41974391700B9CD83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84DC51D91976798900515A5E;
+			remoteInfo = DocumentExtensionFileProvider;
+		};
+		84DC51E51976798900515A5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842FE4A41974391700B9CD83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84DC51D91976798900515A5E;
+			remoteInfo = DocumentExtensionFileProvider;
+		};
+		84DC51E71976798900515A5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842FE4A41974391700B9CD83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84DC51CB1976798900515A5E;
+			remoteInfo = DocumentExtension;
+		};
+		84DC51EA1976798900515A5E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842FE4A41974391700B9CD83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84DC51CB1976798900515A5E;
+			remoteInfo = DocumentExtension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,8 +127,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				84DC51E91976798900515A5E /* DocumentExtension.appex in Embed App Extensions */,
 				849FB19C1975210F008933E5 /* ActionExtension.appex in Embed App Extensions */,
 				849FB1B01975212D008933E5 /* KeyboardExtension.appex in Embed App Extensions */,
+				84DC51E41976798900515A5E /* DocumentExtensionFileProvider.appex in Embed App Extensions */,
 				849FB1C819752156008933E5 /* WidgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -145,6 +182,21 @@
 		84A7DED6197586F900712108 /* PresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresentationViewController.m; path = Classes/PresentationViewController.m; sourceTree = "<group>"; };
 		84A7DED819758C5600712108 /* CustomPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomPopoverViewController.h; path = Classes/CustomPopoverViewController.h; sourceTree = "<group>"; };
 		84A7DED919758C5600712108 /* CustomPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomPopoverViewController.m; path = Classes/CustomPopoverViewController.m; sourceTree = "<group>"; };
+		84DC51CC1976798900515A5E /* DocumentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DocumentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DC51CF1976798900515A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DC51D01976798900515A5E /* DocumentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DocumentExtension.entitlements; sourceTree = "<group>"; };
+		84DC51D11976798900515A5E /* DocumentPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentPickerViewController.h; sourceTree = "<group>"; };
+		84DC51D21976798900515A5E /* DocumentPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentPickerViewController.m; sourceTree = "<group>"; };
+		84DC51D41976798900515A5E /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		84DC51DA1976798900515A5E /* DocumentExtensionFileProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DocumentExtensionFileProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DC51DD1976798900515A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84DC51DE1976798900515A5E /* DocumentExtensionFileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DocumentExtensionFileProvider.entitlements; sourceTree = "<group>"; };
+		84DC51DF1976798900515A5E /* FileProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileProvider.h; sourceTree = "<group>"; };
+		84DC51E01976798900515A5E /* FileProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileProvider.m; sourceTree = "<group>"; };
+		84DC51F219767F2600515A5E /* DocumentProvideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DocumentProvideViewController.h; path = Classes/DocumentProvideViewController.h; sourceTree = "<group>"; };
+		84DC51F319767F2600515A5E /* DocumentProvideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DocumentProvideViewController.m; path = Classes/DocumentProvideViewController.m; sourceTree = "<group>"; };
+		84F0D88B19769311000BC949 /* CustomPresentationAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomPresentationAnimation.h; path = Classes/CustomPresentationAnimation.h; sourceTree = "<group>"; };
+		84F0D88C19769311000BC949 /* CustomPresentationAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomPresentationAnimation.m; path = Classes/CustomPresentationAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +236,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84DC51C91976798900515A5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DC51D71976798900515A5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -195,6 +261,8 @@
 				849FB1921975210F008933E5 /* ActionExtension */,
 				849FB1A81975212D008933E5 /* KeyboardExtension */,
 				849FB1BE19752156008933E5 /* WidgetExtension */,
+				84DC51CD1976798900515A5E /* DocumentExtension */,
+				84DC51DB1976798900515A5E /* DocumentExtensionFileProvider */,
 				849FB1BB19752156008933E5 /* Frameworks */,
 				842FE4AD1974391700B9CD83 /* Products */,
 			);
@@ -208,6 +276,8 @@
 				849FB1911975210F008933E5 /* ActionExtension.appex */,
 				849FB1A71975212D008933E5 /* KeyboardExtension.appex */,
 				849FB1BA19752156008933E5 /* WidgetExtension.appex */,
+				84DC51CC1976798900515A5E /* DocumentExtension.appex */,
+				84DC51DA1976798900515A5E /* DocumentExtensionFileProvider.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,6 +328,7 @@
 		842FE4D5197441F100B9CD83 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				84F0D88A197692E0000BC949 /* Presentation */,
 				849FB1CF197534FA008933E5 /* KeyboardViewController.h */,
 				849FB1D0197534FA008933E5 /* KeyboardViewController.m */,
 				842FE4D2197441EB00B9CD83 /* BlurViewController.h */,
@@ -266,10 +337,8 @@
 				849FB18719751CCD008933E5 /* PresentViewController.m */,
 				848766D6197570D200611D1F /* ActionViewController.h */,
 				848766D7197570D200611D1F /* ActionViewController.m */,
-				84A7DED5197586F900712108 /* PresentationViewController.h */,
-				84A7DED6197586F900712108 /* PresentationViewController.m */,
-				84A7DED819758C5600712108 /* CustomPopoverViewController.h */,
-				84A7DED919758C5600712108 /* CustomPopoverViewController.m */,
+				84DC51F219767F2600515A5E /* DocumentProvideViewController.h */,
+				84DC51F319767F2600515A5E /* DocumentProvideViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -356,6 +425,58 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		84DC51CD1976798900515A5E /* DocumentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				84DC51D11976798900515A5E /* DocumentPickerViewController.h */,
+				84DC51D21976798900515A5E /* DocumentPickerViewController.m */,
+				84DC51D41976798900515A5E /* MainInterface.storyboard */,
+				84DC51CE1976798900515A5E /* Supporting Files */,
+			);
+			path = DocumentExtension;
+			sourceTree = "<group>";
+		};
+		84DC51CE1976798900515A5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84DC51CF1976798900515A5E /* Info.plist */,
+				84DC51D01976798900515A5E /* DocumentExtension.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84DC51DB1976798900515A5E /* DocumentExtensionFileProvider */ = {
+			isa = PBXGroup;
+			children = (
+				84DC51DF1976798900515A5E /* FileProvider.h */,
+				84DC51E01976798900515A5E /* FileProvider.m */,
+				84DC51DC1976798900515A5E /* Supporting Files */,
+			);
+			path = DocumentExtensionFileProvider;
+			sourceTree = "<group>";
+		};
+		84DC51DC1976798900515A5E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84DC51DD1976798900515A5E /* Info.plist */,
+				84DC51DE1976798900515A5E /* DocumentExtensionFileProvider.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84F0D88A197692E0000BC949 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				84A7DED5197586F900712108 /* PresentationViewController.h */,
+				84A7DED6197586F900712108 /* PresentationViewController.m */,
+				84A7DED819758C5600712108 /* CustomPopoverViewController.h */,
+				84A7DED919758C5600712108 /* CustomPopoverViewController.m */,
+				84F0D88B19769311000BC949 /* CustomPresentationAnimation.h */,
+				84F0D88C19769311000BC949 /* CustomPresentationAnimation.m */,
+			);
+			name = Presentation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -377,6 +498,10 @@
 				849FB1B21975212D008933E5 /* PBXTargetDependency */,
 				849FB1C719752156008933E5 /* PBXTargetDependency */,
 				849FB1CA19752156008933E5 /* PBXTargetDependency */,
+				84DC51E31976798900515A5E /* PBXTargetDependency */,
+				84DC51E61976798900515A5E /* PBXTargetDependency */,
+				84DC51E81976798900515A5E /* PBXTargetDependency */,
+				84DC51EB1976798900515A5E /* PBXTargetDependency */,
 			);
 			name = FeaturesIOS8;
 			productName = FeaturesIOS8;
@@ -452,6 +577,40 @@
 			productReference = 849FB1BA19752156008933E5 /* WidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		84DC51CB1976798900515A5E /* DocumentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DC51F11976798900515A5E /* Build configuration list for PBXNativeTarget "DocumentExtension" */;
+			buildPhases = (
+				84DC51C81976798900515A5E /* Sources */,
+				84DC51C91976798900515A5E /* Frameworks */,
+				84DC51CA1976798900515A5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocumentExtension;
+			productName = DocumentExtension;
+			productReference = 84DC51CC1976798900515A5E /* DocumentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		84DC51D91976798900515A5E /* DocumentExtensionFileProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DC51F01976798900515A5E /* Build configuration list for PBXNativeTarget "DocumentExtensionFileProvider" */;
+			buildPhases = (
+				84DC51D61976798900515A5E /* Sources */,
+				84DC51D71976798900515A5E /* Frameworks */,
+				84DC51D81976798900515A5E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocumentExtensionFileProvider;
+			productName = DocumentExtensionFileProvider;
+			productReference = 84DC51DA1976798900515A5E /* DocumentExtensionFileProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -477,6 +636,12 @@
 					849FB1B919752156008933E5 = {
 						CreatedOnToolsVersion = 6.0;
 					};
+					84DC51CB1976798900515A5E = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					84DC51D91976798900515A5E = {
+						CreatedOnToolsVersion = 6.0;
+					};
 				};
 			};
 			buildConfigurationList = 842FE4A71974391700B9CD83 /* Build configuration list for PBXProject "FeaturesIOS8" */;
@@ -497,6 +662,8 @@
 				849FB1901975210F008933E5 /* ActionExtension */,
 				849FB1A61975212D008933E5 /* KeyboardExtension */,
 				849FB1B919752156008933E5 /* WidgetExtension */,
+				84DC51CB1976798900515A5E /* DocumentExtension */,
+				84DC51D91976798900515A5E /* DocumentExtensionFileProvider */,
 			);
 		};
 /* End PBXProject section */
@@ -543,6 +710,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84DC51CA1976798900515A5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DC51D51976798900515A5E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DC51D81976798900515A5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -553,9 +735,11 @@
 				849FB18C197520CA008933E5 /* ExtensionsViewController.m in Sources */,
 				849FB18819751CCD008933E5 /* PresentViewController.m in Sources */,
 				849FB1D1197534FA008933E5 /* KeyboardViewController.m in Sources */,
+				84DC51F419767F2600515A5E /* DocumentProvideViewController.m in Sources */,
 				84A7DEDA19758C5600712108 /* CustomPopoverViewController.m in Sources */,
 				842FE4B81974391700B9CD83 /* ViewController.m in Sources */,
 				842FE4B51974391700B9CD83 /* AppDelegate.m in Sources */,
+				84F0D88D19769311000BC949 /* CustomPresentationAnimation.m in Sources */,
 				842FE4B21974391700B9CD83 /* main.m in Sources */,
 				848766D8197570D200611D1F /* ActionViewController.m in Sources */,
 				842FE4D4197441EB00B9CD83 /* BlurViewController.m in Sources */,
@@ -592,6 +776,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				849FB1C319752156008933E5 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DC51C81976798900515A5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DC51D31976798900515A5E /* DocumentPickerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DC51D61976798900515A5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DC51E11976798900515A5E /* FileProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +832,26 @@
 			isa = PBXTargetDependency;
 			target = 849FB1B919752156008933E5 /* WidgetExtension */;
 			targetProxy = 849FB1C919752156008933E5 /* PBXContainerItemProxy */;
+		};
+		84DC51E31976798900515A5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84DC51D91976798900515A5E /* DocumentExtensionFileProvider */;
+			targetProxy = 84DC51E21976798900515A5E /* PBXContainerItemProxy */;
+		};
+		84DC51E61976798900515A5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84DC51D91976798900515A5E /* DocumentExtensionFileProvider */;
+			targetProxy = 84DC51E51976798900515A5E /* PBXContainerItemProxy */;
+		};
+		84DC51E81976798900515A5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84DC51CB1976798900515A5E /* DocumentExtension */;
+			targetProxy = 84DC51E71976798900515A5E /* PBXContainerItemProxy */;
+		};
+		84DC51EB1976798900515A5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84DC51CB1976798900515A5E /* DocumentExtension */;
+			targetProxy = 84DC51EA1976798900515A5E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -853,6 +1073,58 @@
 			};
 			name = Release;
 		};
+		84DC51EC1976798900515A5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DocumentExtension/DocumentExtension.entitlements;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DocumentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		84DC51ED1976798900515A5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DocumentExtension/DocumentExtension.entitlements;
+				INFOPLIST_FILE = DocumentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		84DC51EE1976798900515A5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DocumentExtensionFileProvider/DocumentExtensionFileProvider.entitlements;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DocumentExtensionFileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		84DC51EF1976798900515A5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DocumentExtensionFileProvider/DocumentExtensionFileProvider.entitlements;
+				INFOPLIST_FILE = DocumentExtensionFileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -906,6 +1178,24 @@
 			buildConfigurations = (
 				849FB1CC19752156008933E5 /* Debug */,
 				849FB1CD19752156008933E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DC51F01976798900515A5E /* Build configuration list for PBXNativeTarget "DocumentExtensionFileProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DC51EE1976798900515A5E /* Debug */,
+				84DC51EF1976798900515A5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84DC51F11976798900515A5E /* Build configuration list for PBXNativeTarget "DocumentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DC51EC1976798900515A5E /* Debug */,
+				84DC51ED1976798900515A5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

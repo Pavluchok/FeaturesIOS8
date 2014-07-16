@@ -8,6 +8,7 @@
 
 #import "CustomPopoverViewController.h"
 #import "PresentationViewController.h"
+#import "CustomPresentationAnimation.h"
 
 @interface CustomPopoverViewController ()
 
@@ -45,6 +46,19 @@
     
     return nil;
 }
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
+{
+    if(presented == self)
+    {
+        return [CustomPresentationAnimation new];
+    }
+    else
+    {
+        return nil;
+    }
+}
+
 - (IBAction)dismissPopover:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];

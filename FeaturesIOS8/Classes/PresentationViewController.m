@@ -28,7 +28,7 @@
 - (void)presentationTransitionWillBegin
 {
     _backView = [[UIView alloc]initWithFrame:self.containerView.bounds];
-    [_backView setBackgroundColor:[UIColor redColor]];
+    [_backView setBackgroundColor:[UIColor lightGrayColor]];
     [self.containerView addSubview:_backView];
     [_backView setAlpha:0.0f];
     

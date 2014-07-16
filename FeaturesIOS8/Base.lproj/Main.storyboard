@@ -49,6 +49,9 @@
                         <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                         </variation>
+                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="640"/>
+                        </variation>
                         <variation key="heightClass=regular-widthClass=regular" ambiguous="YES">
                             <rect key="frame" x="0.0" y="0.0" width="640" height="640"/>
                         </variation>
@@ -176,6 +179,9 @@
                                 <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="640"/>
+                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="3FZ-lj-AXd" id="Waq-kQ-QJ3"/>
                                     <outlet property="delegate" destination="3FZ-lj-AXd" id="yuW-He-NOl"/>
@@ -197,6 +203,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CO7-sa-1jo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="976" y="59"/>
+        </scene>
+        <!--Document Provide View Controller-->
+        <scene sceneID="BkO-2f-a99">
+            <objects>
+                <viewController storyboardIdentifier="DocumentVC" id="cf0-PD-x6V" customClass="DocumentProvideViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ptk-74-eU2"/>
+                        <viewControllerLayoutGuide type="bottom" id="bG4-nv-Qmd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Lo-5H-8ce">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jL1-pl-I9u">
+                                <rect key="frame" x="175" y="279" width="46" height="30"/>
+                                <state key="normal" title="Picker">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapPickerButton:" destination="cf0-PD-x6V" eventType="touchUpInside" id="UFa-DV-se9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uln-9N-G8D">
+                                <rect key="frame" x="40" y="279" width="46" height="30"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapMenuButton:" destination="cf0-PD-x6V" eventType="touchUpInside" id="uvt-Gf-ijH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOe-N4-4Ob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1523" y="-779"/>
         </scene>
         <!--Action View Controller-->
         <scene sceneID="AXN-Mg-xoQ">
