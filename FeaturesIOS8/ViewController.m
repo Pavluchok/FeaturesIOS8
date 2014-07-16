@@ -20,7 +20,7 @@ static NSString *const kFeaturestTableCellIdentifier = @"FeaturesCell";
             
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+        
     _features = @[@"Extensions", @"Blur", @"Presentation View Controller"];
     // Do any additional setup after loading the view, typically from a nib.
 }

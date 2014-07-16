@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		842934C81976A2BA008E40A4 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842934C71976A2BA008E40A4 /* PhotosUI.framework */; };
+		842934CA1976A2BA008E40A4 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842934C91976A2BA008E40A4 /* Photos.framework */; };
+		842934D01976A2BA008E40A4 /* PhotoEditingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842934CF1976A2BA008E40A4 /* PhotoEditingViewController.m */; };
+		842934D21976A2BA008E40A4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842934D11976A2BA008E40A4 /* MainInterface.storyboard */; };
+		842934D51976A2BA008E40A4 /* PhotoEditinExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 842934C61976A2BA008E40A4 /* PhotoEditinExtension.appex */; };
 		842FE4B21974391700B9CD83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FE4B11974391700B9CD83 /* main.m */; };
 		842FE4B51974391700B9CD83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FE4B41974391700B9CD83 /* AppDelegate.m */; };
 		842FE4B81974391700B9CD83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FE4B71974391700B9CD83 /* ViewController.m */; };
@@ -15,6 +20,7 @@
 		842FE4C91974391700B9CD83 /* FeaturesIOS8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FE4C81974391700B9CD83 /* FeaturesIOS8Tests.m */; };
 		842FE4D4197441EB00B9CD83 /* BlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FE4D3197441EB00B9CD83 /* BlurViewController.m */; };
 		842FE4D81974432300B9CD83 /* Ukraine.png in Resources */ = {isa = PBXBuildFile; fileRef = 842FE4D71974432300B9CD83 /* Ukraine.png */; };
+		844305521976C16E00BB9B5D /* Ukraine.png in Resources */ = {isa = PBXBuildFile; fileRef = 842FE4D71974432300B9CD83 /* Ukraine.png */; };
 		848766D8197570D200611D1F /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848766D7197570D200611D1F /* ActionViewController.m */; };
 		848766DA1975734600611D1F /* Apple_Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 848766D91975734600611D1F /* Apple_Logo.jpg */; };
 		849FB18819751CCD008933E5 /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FB18719751CCD008933E5 /* PresentViewController.m */; };
@@ -41,6 +47,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		842934D31976A2BA008E40A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842FE4A41974391700B9CD83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 842934C51976A2BA008E40A4;
+			remoteInfo = PhotoEditinExtension;
+		};
+		842934D61976A2BA008E40A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842FE4A41974391700B9CD83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 842934C51976A2BA008E40A4;
+			remoteInfo = PhotoEditinExtension;
+		};
 		842FE4C31974391700B9CD83 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 842FE4A41974391700B9CD83 /* Project object */;
@@ -127,6 +147,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				842934D51976A2BA008E40A4 /* PhotoEditinExtension.appex in Embed App Extensions */,
 				84DC51E91976798900515A5E /* DocumentExtension.appex in Embed App Extensions */,
 				849FB19C1975210F008933E5 /* ActionExtension.appex in Embed App Extensions */,
 				849FB1B01975212D008933E5 /* KeyboardExtension.appex in Embed App Extensions */,
@@ -139,6 +160,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		842934C61976A2BA008E40A4 /* PhotoEditinExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhotoEditinExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		842934C71976A2BA008E40A4 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		842934C91976A2BA008E40A4 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		842934CD1976A2BA008E40A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		842934CE1976A2BA008E40A4 /* PhotoEditingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoEditingViewController.h; sourceTree = "<group>"; };
+		842934CF1976A2BA008E40A4 /* PhotoEditingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoEditingViewController.m; sourceTree = "<group>"; };
+		842934D11976A2BA008E40A4 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		842FE4AC1974391700B9CD83 /* FeaturesIOS8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeaturesIOS8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842FE4B01974391700B9CD83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842FE4B11974391700B9CD83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -200,6 +228,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		842934C31976A2BA008E40A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842934C81976A2BA008E40A4 /* PhotosUI.framework in Frameworks */,
+				842934CA1976A2BA008E40A4 /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		842FE4A91974391700B9CD83 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,6 +290,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		842934CB1976A2BA008E40A4 /* PhotoEditinExtension */ = {
+			isa = PBXGroup;
+			children = (
+				842934CE1976A2BA008E40A4 /* PhotoEditingViewController.h */,
+				842934CF1976A2BA008E40A4 /* PhotoEditingViewController.m */,
+				842934D11976A2BA008E40A4 /* MainInterface.storyboard */,
+				842934CC1976A2BA008E40A4 /* Supporting Files */,
+			);
+			path = PhotoEditinExtension;
+			sourceTree = "<group>";
+		};
+		842934CC1976A2BA008E40A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				842934CD1976A2BA008E40A4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		842FE4A31974391700B9CD83 = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +319,7 @@
 				849FB1BE19752156008933E5 /* WidgetExtension */,
 				84DC51CD1976798900515A5E /* DocumentExtension */,
 				84DC51DB1976798900515A5E /* DocumentExtensionFileProvider */,
+				842934CB1976A2BA008E40A4 /* PhotoEditinExtension */,
 				849FB1BB19752156008933E5 /* Frameworks */,
 				842FE4AD1974391700B9CD83 /* Products */,
 			);
@@ -278,6 +335,7 @@
 				849FB1BA19752156008933E5 /* WidgetExtension.appex */,
 				84DC51CC1976798900515A5E /* DocumentExtension.appex */,
 				84DC51DA1976798900515A5E /* DocumentExtensionFileProvider.appex */,
+				842934C61976A2BA008E40A4 /* PhotoEditinExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -402,6 +460,8 @@
 			isa = PBXGroup;
 			children = (
 				849FB1BC19752156008933E5 /* NotificationCenter.framework */,
+				842934C71976A2BA008E40A4 /* PhotosUI.framework */,
+				842934C91976A2BA008E40A4 /* Photos.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -480,6 +540,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		842934C51976A2BA008E40A4 /* PhotoEditinExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 842934DA1976A2BA008E40A4 /* Build configuration list for PBXNativeTarget "PhotoEditinExtension" */;
+			buildPhases = (
+				842934C21976A2BA008E40A4 /* Sources */,
+				842934C31976A2BA008E40A4 /* Frameworks */,
+				842934C41976A2BA008E40A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoEditinExtension;
+			productName = PhotoEditinExtension;
+			productReference = 842934C61976A2BA008E40A4 /* PhotoEditinExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		842FE4AB1974391700B9CD83 /* FeaturesIOS8 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 842FE4CC1974391700B9CD83 /* Build configuration list for PBXNativeTarget "FeaturesIOS8" */;
@@ -502,6 +579,8 @@
 				84DC51E61976798900515A5E /* PBXTargetDependency */,
 				84DC51E81976798900515A5E /* PBXTargetDependency */,
 				84DC51EB1976798900515A5E /* PBXTargetDependency */,
+				842934D41976A2BA008E40A4 /* PBXTargetDependency */,
+				842934D71976A2BA008E40A4 /* PBXTargetDependency */,
 			);
 			name = FeaturesIOS8;
 			productName = FeaturesIOS8;
@@ -620,6 +699,9 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = vitaliy.pavlyuk;
 				TargetAttributes = {
+					842934C51976A2BA008E40A4 = {
+						CreatedOnToolsVersion = 6.0;
+					};
 					842FE4AB1974391700B9CD83 = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -664,11 +746,21 @@
 				849FB1B919752156008933E5 /* WidgetExtension */,
 				84DC51CB1976798900515A5E /* DocumentExtension */,
 				84DC51D91976798900515A5E /* DocumentExtensionFileProvider */,
+				842934C51976A2BA008E40A4 /* PhotoEditinExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		842934C41976A2BA008E40A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842934D21976A2BA008E40A4 /* MainInterface.storyboard in Resources */,
+				844305521976C16E00BB9B5D /* Ukraine.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		842FE4AA1974391700B9CD83 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -728,6 +820,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		842934C21976A2BA008E40A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				842934D01976A2BA008E40A4 /* PhotoEditingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		842FE4A81974391700B9CD83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -798,6 +898,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		842934D41976A2BA008E40A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 842934C51976A2BA008E40A4 /* PhotoEditinExtension */;
+			targetProxy = 842934D31976A2BA008E40A4 /* PBXContainerItemProxy */;
+		};
+		842934D71976A2BA008E40A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 842934C51976A2BA008E40A4 /* PhotoEditinExtension */;
+			targetProxy = 842934D61976A2BA008E40A4 /* PBXContainerItemProxy */;
+		};
 		842FE4C41974391700B9CD83 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 842FE4AB1974391700B9CD83 /* FeaturesIOS8 */;
@@ -867,6 +977,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		842934D81976A2BA008E40A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoEditinExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		842934D91976A2BA008E40A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PhotoEditinExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		842FE4CA1974391700B9CD83 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1128,6 +1262,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		842934DA1976A2BA008E40A4 /* Build configuration list for PBXNativeTarget "PhotoEditinExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				842934D81976A2BA008E40A4 /* Debug */,
+				842934D91976A2BA008E40A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		842FE4A71974391700B9CD83 /* Build configuration list for PBXProject "FeaturesIOS8" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

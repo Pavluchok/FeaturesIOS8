@@ -29,6 +29,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>PhotoEditinExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>WidgetExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -37,6 +42,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>842934C51976A2BA008E40A4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>842FE4AB1974391700B9CD83</key>
 		<dict>
 			<key>primary</key>
