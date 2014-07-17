@@ -18,8 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _extensions = @[@"Action", @"Keyboard", @"Today", @"Document provider"];
-    _identifier = @[@"ActionVC", @"KeyboarVC", @"TodayVC"];
+    _extensions = @[@"Action", @"Keyboard", @"Today", @"Document provider", @"Share"];
+    _identifier = @[@"ActionVC", @"KeyboarVC", @"TodayVC", @"DocumentVC", @"ShareVC"];
 
     // Do any additional setup after loading the view.
 }
@@ -62,6 +62,11 @@
     {
         viewControllerIdentifier = @"DocumentVC";
     }
+    else if ([_extensions[indexPath.row] isEqual:@"Share"])
+    {
+        viewControllerIdentifier = _identifier[indexPath.row];
+    }
+    
     
     if (viewControllerIdentifier != nil)
     {

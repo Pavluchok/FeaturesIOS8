@@ -34,6 +34,11 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>ShareExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>WidgetExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -68,6 +73,11 @@
 			<true/>
 		</dict>
 		<key>849FB1B919752156008933E5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84A0F10F1977BCE20018D39C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

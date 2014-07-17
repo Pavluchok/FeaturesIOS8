@@ -35,6 +35,10 @@
 		849FB1C519752156008933E5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849FB1C419752156008933E5 /* MainInterface.storyboard */; };
 		849FB1C819752156008933E5 /* WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 849FB1BA19752156008933E5 /* WidgetExtension.appex */; };
 		849FB1D1197534FA008933E5 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FB1D0197534FA008933E5 /* KeyboardViewController.m */; };
+		84A0F1161977BCE20018D39C /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A0F1151977BCE20018D39C /* ShareViewController.m */; };
+		84A0F1181977BCE20018D39C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A0F1171977BCE20018D39C /* MainInterface.storyboard */; };
+		84A0F11B1977BCE20018D39C /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84A0F1101977BCE20018D39C /* ShareExtension.appex */; };
+		84A0F1231977BDA50018D39C /* ShareExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A0F1221977BDA50018D39C /* ShareExtensionViewController.m */; };
 		84A7DED7197586F900712108 /* PresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7DED6197586F900712108 /* PresentationViewController.m */; };
 		84A7DEDA19758C5600712108 /* CustomPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7DED919758C5600712108 /* CustomPopoverViewController.m */; };
 		84DC51D31976798900515A5E /* DocumentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84DC51D21976798900515A5E /* DocumentPickerViewController.m */; };
@@ -110,6 +114,20 @@
 			remoteGlobalIDString = 849FB1B919752156008933E5;
 			remoteInfo = WidgetExtension;
 		};
+		84A0F1191977BCE20018D39C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842FE4A41974391700B9CD83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84A0F10F1977BCE20018D39C;
+			remoteInfo = ShareExtension;
+		};
+		84A0F11C1977BCE20018D39C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 842FE4A41974391700B9CD83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84A0F10F1977BCE20018D39C;
+			remoteInfo = ShareExtension;
+		};
 		84DC51E21976798900515A5E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 842FE4A41974391700B9CD83 /* Project object */;
@@ -147,6 +165,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				84A0F11B1977BCE20018D39C /* ShareExtension.appex in Embed App Extensions */,
 				842934D51976A2BA008E40A4 /* PhotoEditinExtension.appex in Embed App Extensions */,
 				84DC51E91976798900515A5E /* DocumentExtension.appex in Embed App Extensions */,
 				849FB19C1975210F008933E5 /* ActionExtension.appex in Embed App Extensions */,
@@ -206,6 +225,13 @@
 		849FB1C419752156008933E5 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		849FB1CF197534FA008933E5 /* KeyboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeyboardViewController.h; path = Classes/KeyboardViewController.h; sourceTree = "<group>"; };
 		849FB1D0197534FA008933E5 /* KeyboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeyboardViewController.m; path = Classes/KeyboardViewController.m; sourceTree = "<group>"; };
+		84A0F1101977BCE20018D39C /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A0F1131977BCE20018D39C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A0F1141977BCE20018D39C /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		84A0F1151977BCE20018D39C /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		84A0F1171977BCE20018D39C /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		84A0F1211977BDA50018D39C /* ShareExtensionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShareExtensionViewController.h; path = Classes/ShareExtensionViewController.h; sourceTree = "<group>"; };
+		84A0F1221977BDA50018D39C /* ShareExtensionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShareExtensionViewController.m; path = Classes/ShareExtensionViewController.m; sourceTree = "<group>"; };
 		84A7DED5197586F900712108 /* PresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresentationViewController.h; path = Classes/PresentationViewController.h; sourceTree = "<group>"; };
 		84A7DED6197586F900712108 /* PresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresentationViewController.m; path = Classes/PresentationViewController.m; sourceTree = "<group>"; };
 		84A7DED819758C5600712108 /* CustomPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomPopoverViewController.h; path = Classes/CustomPopoverViewController.h; sourceTree = "<group>"; };
@@ -273,6 +299,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84A0F10D1977BCE20018D39C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84DC51C91976798900515A5E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -320,6 +353,7 @@
 				84DC51CD1976798900515A5E /* DocumentExtension */,
 				84DC51DB1976798900515A5E /* DocumentExtensionFileProvider */,
 				842934CB1976A2BA008E40A4 /* PhotoEditinExtension */,
+				84A0F1111977BCE20018D39C /* ShareExtension */,
 				849FB1BB19752156008933E5 /* Frameworks */,
 				842FE4AD1974391700B9CD83 /* Products */,
 			);
@@ -336,6 +370,7 @@
 				84DC51CC1976798900515A5E /* DocumentExtension.appex */,
 				84DC51DA1976798900515A5E /* DocumentExtensionFileProvider.appex */,
 				842934C61976A2BA008E40A4 /* PhotoEditinExtension.appex */,
+				84A0F1101977BCE20018D39C /* ShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -397,6 +432,8 @@
 				848766D7197570D200611D1F /* ActionViewController.m */,
 				84DC51F219767F2600515A5E /* DocumentProvideViewController.h */,
 				84DC51F319767F2600515A5E /* DocumentProvideViewController.m */,
+				84A0F1211977BDA50018D39C /* ShareExtensionViewController.h */,
+				84A0F1221977BDA50018D39C /* ShareExtensionViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -481,6 +518,25 @@
 			isa = PBXGroup;
 			children = (
 				849FB1C019752156008933E5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84A0F1111977BCE20018D39C /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				84A0F1141977BCE20018D39C /* ShareViewController.h */,
+				84A0F1151977BCE20018D39C /* ShareViewController.m */,
+				84A0F1171977BCE20018D39C /* MainInterface.storyboard */,
+				84A0F1121977BCE20018D39C /* Supporting Files */,
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		84A0F1121977BCE20018D39C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84A0F1131977BCE20018D39C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -581,6 +637,8 @@
 				84DC51EB1976798900515A5E /* PBXTargetDependency */,
 				842934D41976A2BA008E40A4 /* PBXTargetDependency */,
 				842934D71976A2BA008E40A4 /* PBXTargetDependency */,
+				84A0F11A1977BCE20018D39C /* PBXTargetDependency */,
+				84A0F11D1977BCE20018D39C /* PBXTargetDependency */,
 			);
 			name = FeaturesIOS8;
 			productName = FeaturesIOS8;
@@ -656,6 +714,23 @@
 			productReference = 849FB1BA19752156008933E5 /* WidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		84A0F10F1977BCE20018D39C /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A0F1201977BCE20018D39C /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				84A0F10C1977BCE20018D39C /* Sources */,
+				84A0F10D1977BCE20018D39C /* Frameworks */,
+				84A0F10E1977BCE20018D39C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtension;
+			productReference = 84A0F1101977BCE20018D39C /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		84DC51CB1976798900515A5E /* DocumentExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84DC51F11976798900515A5E /* Build configuration list for PBXNativeTarget "DocumentExtension" */;
@@ -718,6 +793,9 @@
 					849FB1B919752156008933E5 = {
 						CreatedOnToolsVersion = 6.0;
 					};
+					84A0F10F1977BCE20018D39C = {
+						CreatedOnToolsVersion = 6.0;
+					};
 					84DC51CB1976798900515A5E = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -747,6 +825,7 @@
 				84DC51CB1976798900515A5E /* DocumentExtension */,
 				84DC51D91976798900515A5E /* DocumentExtensionFileProvider */,
 				842934C51976A2BA008E40A4 /* PhotoEditinExtension */,
+				84A0F10F1977BCE20018D39C /* ShareExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -802,6 +881,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84A0F10E1977BCE20018D39C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A0F1181977BCE20018D39C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84DC51CA1976798900515A5E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -832,6 +919,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A0F1231977BDA50018D39C /* ShareExtensionViewController.m in Sources */,
 				849FB18C197520CA008933E5 /* ExtensionsViewController.m in Sources */,
 				849FB18819751CCD008933E5 /* PresentViewController.m in Sources */,
 				849FB1D1197534FA008933E5 /* KeyboardViewController.m in Sources */,
@@ -876,6 +964,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				849FB1C319752156008933E5 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A0F10C1977BCE20018D39C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A0F1161977BCE20018D39C /* ShareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -942,6 +1038,16 @@
 			isa = PBXTargetDependency;
 			target = 849FB1B919752156008933E5 /* WidgetExtension */;
 			targetProxy = 849FB1C919752156008933E5 /* PBXContainerItemProxy */;
+		};
+		84A0F11A1977BCE20018D39C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84A0F10F1977BCE20018D39C /* ShareExtension */;
+			targetProxy = 84A0F1191977BCE20018D39C /* PBXContainerItemProxy */;
+		};
+		84A0F11D1977BCE20018D39C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84A0F10F1977BCE20018D39C /* ShareExtension */;
+			targetProxy = 84A0F11C1977BCE20018D39C /* PBXContainerItemProxy */;
 		};
 		84DC51E31976798900515A5E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1207,6 +1313,30 @@
 			};
 			name = Release;
 		};
+		84A0F11E1977BCE20018D39C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		84A0F11F1977BCE20018D39C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		84DC51EC1976798900515A5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1324,6 +1454,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		84A0F1201977BCE20018D39C /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A0F11E1977BCE20018D39C /* Debug */,
+				84A0F11F1977BCE20018D39C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		84DC51F01976798900515A5E /* Build configuration list for PBXNativeTarget "DocumentExtensionFileProvider" */ = {
 			isa = XCConfigurationList;
