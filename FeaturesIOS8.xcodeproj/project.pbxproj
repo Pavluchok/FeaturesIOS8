@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84066116197813A7000EB9E9 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84066115197813A7000EB9E9 /* ContainerViewController.m */; };
 		842934C81976A2BA008E40A4 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842934C71976A2BA008E40A4 /* PhotosUI.framework */; };
 		842934CA1976A2BA008E40A4 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842934C91976A2BA008E40A4 /* Photos.framework */; };
 		842934D01976A2BA008E40A4 /* PhotoEditingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842934CF1976A2BA008E40A4 /* PhotoEditingViewController.m */; };
@@ -20,7 +21,9 @@
 		842FE4C91974391700B9CD83 /* FeaturesIOS8Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FE4C81974391700B9CD83 /* FeaturesIOS8Tests.m */; };
 		842FE4D4197441EB00B9CD83 /* BlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FE4D3197441EB00B9CD83 /* BlurViewController.m */; };
 		842FE4D81974432300B9CD83 /* Ukraine.png in Resources */ = {isa = PBXBuildFile; fileRef = 842FE4D71974432300B9CD83 /* Ukraine.png */; };
+		84320B9D1977E8A600A20BF9 /* SplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84320B9C1977E8A600A20BF9 /* SplitViewController.m */; };
 		844305521976C16E00BB9B5D /* Ukraine.png in Resources */ = {isa = PBXBuildFile; fileRef = 842FE4D71974432300B9CD83 /* Ukraine.png */; };
+		847150B51978010500B01F5E /* DetailSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847150B41978010500B01F5E /* DetailSplitViewController.m */; };
 		848766D8197570D200611D1F /* ActionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848766D7197570D200611D1F /* ActionViewController.m */; };
 		848766DA1975734600611D1F /* Apple_Logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 848766D91975734600611D1F /* Apple_Logo.jpg */; };
 		849FB18819751CCD008933E5 /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FB18719751CCD008933E5 /* PresentViewController.m */; };
@@ -179,6 +182,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		84066114197813A7000EB9E9 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContainerViewController.h; path = Classes/ContainerViewController.h; sourceTree = "<group>"; };
+		84066115197813A7000EB9E9 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContainerViewController.m; path = Classes/ContainerViewController.m; sourceTree = "<group>"; };
 		842934C61976A2BA008E40A4 /* PhotoEditinExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhotoEditinExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		842934C71976A2BA008E40A4 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
 		842934C91976A2BA008E40A4 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
@@ -201,6 +206,10 @@
 		842FE4D2197441EB00B9CD83 /* BlurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlurViewController.h; path = Classes/BlurViewController.h; sourceTree = "<group>"; };
 		842FE4D3197441EB00B9CD83 /* BlurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlurViewController.m; path = Classes/BlurViewController.m; sourceTree = "<group>"; };
 		842FE4D71974432300B9CD83 /* Ukraine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ukraine.png; sourceTree = "<group>"; };
+		84320B9B1977E8A600A20BF9 /* SplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplitViewController.h; path = Classes/SplitView/SplitViewController.h; sourceTree = "<group>"; };
+		84320B9C1977E8A600A20BF9 /* SplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplitViewController.m; path = Classes/SplitView/SplitViewController.m; sourceTree = "<group>"; };
+		847150B31978010500B01F5E /* DetailSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailSplitViewController.h; path = Classes/SplitView/DetailSplitViewController.h; sourceTree = "<group>"; };
+		847150B41978010500B01F5E /* DetailSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailSplitViewController.m; path = Classes/SplitView/DetailSplitViewController.m; sourceTree = "<group>"; };
 		848766D6197570D200611D1F /* ActionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionViewController.h; path = Classes/ActionViewController.h; sourceTree = "<group>"; };
 		848766D7197570D200611D1F /* ActionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionViewController.m; path = Classes/ActionViewController.m; sourceTree = "<group>"; };
 		848766D91975734600611D1F /* Apple_Logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Apple_Logo.jpg; sourceTree = "<group>"; };
@@ -434,6 +443,12 @@
 				84DC51F319767F2600515A5E /* DocumentProvideViewController.m */,
 				84A0F1211977BDA50018D39C /* ShareExtensionViewController.h */,
 				84A0F1221977BDA50018D39C /* ShareExtensionViewController.m */,
+				84320B9B1977E8A600A20BF9 /* SplitViewController.h */,
+				84320B9C1977E8A600A20BF9 /* SplitViewController.m */,
+				847150B31978010500B01F5E /* DetailSplitViewController.h */,
+				847150B41978010500B01F5E /* DetailSplitViewController.m */,
+				84066114197813A7000EB9E9 /* ContainerViewController.h */,
+				84066115197813A7000EB9E9 /* ContainerViewController.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -925,10 +940,13 @@
 				849FB1D1197534FA008933E5 /* KeyboardViewController.m in Sources */,
 				84DC51F419767F2600515A5E /* DocumentProvideViewController.m in Sources */,
 				84A7DEDA19758C5600712108 /* CustomPopoverViewController.m in Sources */,
+				84066116197813A7000EB9E9 /* ContainerViewController.m in Sources */,
 				842FE4B81974391700B9CD83 /* ViewController.m in Sources */,
 				842FE4B51974391700B9CD83 /* AppDelegate.m in Sources */,
 				84F0D88D19769311000BC949 /* CustomPresentationAnimation.m in Sources */,
 				842FE4B21974391700B9CD83 /* main.m in Sources */,
+				847150B51978010500B01F5E /* DetailSplitViewController.m in Sources */,
+				84320B9D1977E8A600A20BF9 /* SplitViewController.m in Sources */,
 				848766D8197570D200611D1F /* ActionViewController.m in Sources */,
 				842FE4D4197441EB00B9CD83 /* BlurViewController.m in Sources */,
 				84A7DED7197586F900712108 /* PresentationViewController.m in Sources */,
@@ -1462,6 +1480,7 @@
 				84A0F11F1977BCE20018D39C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84DC51F01976798900515A5E /* Build configuration list for PBXNativeTarget "DocumentExtensionFileProvider" */ = {
 			isa = XCConfigurationList;

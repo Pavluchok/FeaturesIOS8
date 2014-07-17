@@ -20,7 +20,10 @@ static NSString *const kFeaturestTableCellIdentifier = @"FeaturesCell";
             
 - (void)viewDidLoad {
     [super viewDidLoad];
-        
+    
+    [self setOverrideTraitCollection:[UITraitCollection traitCollectionWithHorizontalSizeClass:UIUserInterfaceSizeClassRegular] forChildViewController:self.splitViewController];
+    [self.splitViewController setPreferredDisplayMode:UISplitViewControllerDisplayModeAllVisible];
+    
     _features = @[@"Extensions", @"Blur", @"Presentation View Controller"];
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -30,39 +33,44 @@ static NSString *const kFeaturestTableCellIdentifier = @"FeaturesCell";
     // Dispose of any resources that can be recreated.
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (IBAction)hideViewControllers:(id)sender
 {
-    return [_features count];
+    //[self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
-{
-    UITableViewCell *cell;
-    if (indexPath.row == 2)
-    {
-        cell = [tableView dequeueReusableCellWithIdentifier:@"PresentationCell"];
-    }
-    else
-    {
-    cell = [tableView dequeueReusableCellWithIdentifier:kFeaturestTableCellIdentifier];
-    }
-    [cell.textLabel setText:_features[indexPath.row]];
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if([_features[indexPath.row] isEqual:@"Blur"])
-    {
-        [self performSegueWithIdentifier:@"BlurSegue" sender:self];
-    }
-    else if ([_features[indexPath.row] isEqual:@"Extensions"])
-    {
-        [self performSegueWithIdentifier:@"ExtensionsSegue" sender:self];
-    }
-    
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-}
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+//{
+//    return [_features count];
+//}
+//
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+//{
+//    UITableViewCell *cell;
+//    if (indexPath.row == 2)
+//    {
+//        cell = [tableView dequeueReusableCellWithIdentifier:@"PresentationCell"];
+//    }
+//    else
+//    {
+//    cell = [tableView dequeueReusableCellWithIdentifier:kFeaturestTableCellIdentifier];
+//    }
+//    [cell.textLabel setText:_features[indexPath.row]];
+//    return cell;
+//}
+//
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    if([_features[indexPath.row] isEqual:@"Blur"])
+//    {
+//        [self performSegueWithIdentifier:@"BlurSegue" sender:self];
+//    }
+//    else if ([_features[indexPath.row] isEqual:@"Extensions"])
+//    {
+//        [self performSegueWithIdentifier:@"ExtensionsSegue" sender:self];
+//    }
+//    
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//}
 
 
 
