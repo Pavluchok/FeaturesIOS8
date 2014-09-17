@@ -55,7 +55,14 @@
             }
         }
     }];
-    [self presentViewController:activityViewController animated:YES completion:nil];
+    
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        UIPopoverController *popover = [[UIPopoverController alloc]initWithContentViewController:activityViewController];
+        [popover presentPopoverFromBarButtonItem:(UIBarButtonItem *)sender permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
+    }
+    else
+        [self presentViewController:activityViewController animated:YES completion:nil];
 }
 
 /*

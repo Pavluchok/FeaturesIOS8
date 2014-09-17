@@ -41,7 +41,7 @@
 {
     if (presented == self)
     {
-        return [[PresentationViewController alloc]initWithPresentingViewController:presenting presentedViewController:presented];
+        return [[PresentationViewController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
     }
     
     return nil;
